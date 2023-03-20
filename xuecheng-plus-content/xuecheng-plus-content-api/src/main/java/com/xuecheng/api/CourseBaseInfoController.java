@@ -2,9 +2,9 @@ package com.xuecheng.api;
 
 import com.xuecheng.base.model.PageParams;
 import com.xuecheng.base.model.PageResult;
-import com.xuecheng.model.dto.QueryCourseParamsDto;
-import com.xuecheng.model.po.CourseBase;
-import com.xuecheng.service.CourseBaseInfoService;
+import com.xuecheng.content.model.dto.QueryCourseParamsDto;
+import com.xuecheng.content.model.po.CourseBase;
+import com.xuecheng.content.service.CourseBaseInfoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
