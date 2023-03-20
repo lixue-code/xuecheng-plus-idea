@@ -2,6 +2,8 @@ package com.xuecheng.api;
 
 import com.xuecheng.base.model.PageParams;
 import com.xuecheng.base.model.PageResult;
+import com.xuecheng.content.model.dto.AddCourseDto;
+import com.xuecheng.content.model.dto.CourseBaseInfoDto;
 import com.xuecheng.content.model.dto.QueryCourseParamsDto;
 import com.xuecheng.content.model.po.CourseBase;
 import com.xuecheng.content.service.CourseBaseInfoService;
@@ -32,6 +34,14 @@ public class CourseBaseInfoController {
         PageResult<CourseBase> courseBasePageResult = courseBaseInfoService.queryCourseBaseList(pageParams, queryCourseParams);
         return courseBasePageResult;
 
+    }
+
+    @PostMapping("/course")
+    /**
+     * @RequestBody:接受Content-type为Json格式的 requestBody
+     */
+    public CourseBaseInfoDto createCourseBase(@RequestBody AddCourseDto addCourseDto){
+        return courseBaseInfoService.createCourseBase(123456L,addCourseDto);
     }
 
 }
