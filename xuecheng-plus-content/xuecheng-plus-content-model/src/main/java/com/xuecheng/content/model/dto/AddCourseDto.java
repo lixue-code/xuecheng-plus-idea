@@ -13,11 +13,11 @@ import javax.validation.constraints.Size;
  * @date 2022/9/7 17:40
  * @version 1.0
  */
-@Data
+@Data //lombook,省略get set方法和toString方法
 @ApiModel(value="AddCourseDto", description="新增课程基本信息")
 public class AddCourseDto {
 
- @NotEmpty(message = "课程名称不能为空")
+ @NotEmpty(message = "课程名称不能为空") //JSR303的校验注解
  @ApiModelProperty(value = "课程名称", required = true)
  private String name;
 
