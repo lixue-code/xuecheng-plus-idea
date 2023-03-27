@@ -213,3 +213,5 @@ java.sql.SQLSyntaxErrorException: Unknown database 'xc402_system'
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
+2023-03-27 22:27:59,676 ERROR [http-nio-63040-exec-3][GlobalExceptionHandler.java:42] - 【系统异常】适用人群内容过少
+2023-03-27 22:28:35,019 ERROR [http-nio-63040-exec-8][GlobalExceptionHandler.java:42] - 【系统异常】适用人群内容过少
